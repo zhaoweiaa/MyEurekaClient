@@ -1,6 +1,6 @@
 #eureka 客户端服务配置
 server:
-  port: 8762
+  port: 8763
 spring:
   application:
     name: HelloApplication
