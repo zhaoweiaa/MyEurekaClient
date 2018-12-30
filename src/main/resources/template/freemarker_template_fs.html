@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>要生成的合同文件</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style mce_bogus="1" type="text/css">
+        body {
+            font-family: SimSun;
+            /*font-family:  Microsoft YaHei, SimHei;*/
+            background:none;margin-left: auto;margin-right: auto;}
+        body,html,div,p{ font-size:14px; margin:0px; padding:0px;}
+        .bule{
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 20px;
+            color:rgba(0,0,255,1);
+            /*background: aqua;*/
+        }
+        .pos{
+            position:absolute;
+            left:200px;
+            top:5px;
+            width: 200px;
+            font-size: 24px;
+            background: red;
+            color: blue;
+        }
+        /*页面大小设置*/
+        /*@page :first {*/
+            /*size: 5.5in 8.5in;*/
+        /*}*/
+        /*portrait:纵向； landscape：横向*/
+        @page  {
+            size: A4 portrait;
+
+        }
+
+        @page :left {
+            margin-left: 30cm;
+        }
+        @page :right {
+            margin-left: 4cm;
+        }
+        @page:right{
+            @bottom-left {
+                margin: 10pt 0 30pt 0;
+                border-top: .25pt solid #666;
+                content: "Our Cats";
+                font-size: 9pt;
+                color: #333;
+            }
+            @bottom-right {
+                margin: 10pt 0 30pt 0;
+                border-top: .25pt solid #666;
+                content: counter(page);
+                font-size: 9pt;
+            }
+            @top-right {
+                content: string(doctitle);
+                margin: 30pt 0 10pt 0;
+                font-size: 9pt;
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="bule pos">你好，${name}</div>
+<img src="sayi.png" width="600"/>
+</body>
+</html>
